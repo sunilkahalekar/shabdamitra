@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Column Layout</title>
+<style>
+    /* Global styles */
+    body {
+        background-image: url('Background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .logo { 
+        position: absolute; 
+        top: 10px; 
+        left: 10px; 
+        width: 100px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+    /* .header-image { 
+        position: absolute; 
+        top: 10px; 
+        right: 10px; 
+        width: 100px; /* Adjust the width as needed */
+        /* height: auto; Maintain aspect ratio */
+    /* }   */
+
+    /* Container styles */
+    .container {
+        display: flex;
+    }
+
+    /* Tree container styles */
+    .tree-container {
+        flex: 1;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .tree-svg {
+        width: 200%;
+        height: auto;
+    }
+    .tree-content {
+        text-align: center;
+        color: white;
+    }
+
+    /* Image container styles */
+    .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .image {
+        width: 65%;
+        height: auto;
+        margin-right: 10px;
+        position: absolute;
+    top: 0;
+    left: 0;
+    }
+    .image + .image {
+    margin-top: 50px;
+}
+
+     .header {
+        /* background-color: #020812; Header background color */
+        padding: 20px;
+        text-align: right;
+     } 
+     .header_logo {
+        /* background-color: #020812; Header background color */
+        /* padding: 20px; */
+        text-align: left;
+     } 
+
+    .header-title {
+        color: #110202; /* Header title color */
+        font-size: 24px;
+        margin: 0;
+       
+    }
+
+    .header-links {
+        margin-top: 20px;
+       align-content: right;
+    }
+
+    .header-link {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .header-link img {
+        width: 100px; /* Adjust the image size as needed */
+        height: auto;
+        
+    }
+   
+    .header-image-left img {
+        margin-left: auto;
+    margin-bottom: auto;
+}
+ 
+</style>
+</head>
+<body>
+
+
+<!-- logo images -->
+<!-- <div class="header"> 
+    <div class="header-links">
+     <div class="header-link">
+         <a href="fifth.html">
+             <img src="Logo.png" alt="logo">
+         </a>
+     </div>
+ </div> -->
+
+<!-- Header images -->
+<div class="header"> 
+       <div class="header-links">
+        <div class="header-link">
+            <a href="shabdamitra.html">
+                <img src="about us.png" alt="About Us">
+            </a>
+        </div>
+        <div class="header-link">
+            <a href="shabdamitra.html">
+                <img src="help.png" alt="Help">
+            </a>
+        </div>
+        <div class="header-link">
+            <a href="shabdamitra.html">
+                <img src="contact.png" alt="Contact Us">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Tree structure with images -->
+    <div class="tree-container">
+        
+        <svg viewBox="0 0 400 400" class="tree-svg">
+            <!-- Tree structure goes here -->
+            <!-- Example arrow lines and images -->
+            <line x1="250" y1="30" x2="100" y2="100" stroke="#fff" stroke-width="2"/>
+            <line x1="250" y1="50" x2="350" y2="100" stroke="#fff" stroke-width="2"/>
+         <!-- Images for nodes -->
+
+        <a href="shabdamitra.html">
+            <image href="Logo.png" x="165" y="0" width="120" height="120" alt="Description of the image"/>
+        </a>
+        <a href="https://www.cfilt.iitb.ac.in/hindishabdamitra/">
+            <image href="Hindi Sm.png" x="10" y="100" width="180" height="180" alt="Description of the image"/>
+        </a>
+        <a href="https://www.cfilt.iitb.ac.in/marathishabdamitra/">
+            <image href="Marathi SM.png" x="150" y="100" width="160" height="160" alt="Description of the image"/>
+        </a>
+        <a href="https://www.cfilt.iitb.ac.in/sanskritshabdamitra/">
+            <image href="sanskrit SM.png" x="260" y="100" width="180" height="180" alt="Description of the image"/>
+        </a>
+        
+
+       <!-- <image href="Logo.png" x="190" y="30" width="100" height="100" href="" />
+       <image href="Hindi Sm.png" x="100" y="150" width="100" height="100" href="https://www.cfilt.iitb.ac.in/sanskritshabdamitra/"/>
+       <image href="Marathi SM.png" x="190" y="150" width="100" height="100"/>
+       <image href="sanskrit SM.png" x="300" y="150" width="100" height="100"/> -->
+
+    </svg>
+        <!-- <div class="tree-content"> -->
+            <!-- Tree content goes here -->
+            <!-- <h2>Tree Structure</h2> -->
+            <!-- <p>Description of the tree structure...</p> -->
+        <!-- </div> -->
+    </div>
+
+    <!-- Image container -->
+    <!-- <div class="image-container">
+        <img src="Headline.png" class="image" alt="Content Image1">
+    </div> -->
+    <div class="image-container">
+        <img src="Headline.png" class="image" alt="Second Image">
+        <img src="Content Character.png" class="image" alt="Content Image">
+    </div>
+    
+</div>
+
+</body>
+</html>
